@@ -1,0 +1,115 @@
+//this is Login page.
+<html>
+<head>
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet">
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color:blue;
+        font-family: cursive;
+    }
+   .main_div{
+       width: 100%;
+       height: 100vh;
+       position: relative;
+       
+   }
+   .box{
+       width: 400px;
+      position: absolute;
+       top: 50%;
+       left: 50%;
+      transform: translate(-50%, -50%);
+       padding: 100px;
+       background: rgba(0,0,0,0.9);
+       border-radius: 15px;
+       box-shadow: 0rem 0rem 2rem 0rem;
+       /*          left bottom   */
+
+   }    
+.box h1{
+	
+    margin-bottom: 70px;
+    text-align: center;
+    color:#fff;
+    text-transform: capitalize;
+}
+.box .inputBox{
+    position:relative; ;
+}
+  .box .inputBox input{
+   width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: orange;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border:none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    outline:none;
+
+}
+.box .inputBox label{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-size: 18px;
+    color:#fff;
+    transition: 0.3s;
+
+}
+.box input[ type="submit"]{
+    background: transparent;
+    border:none;
+    outline:none;
+    color: #fff;
+    background: #03a9f4;
+    border-radius:6px;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+.box .inputBox input:focus ~ label{
+    top: -25px;
+    left: 0%;
+    color: yellow;
+    font-size: 12px;
+}
+
+.box .inputBox input:valid ~ label{
+
+    top: -20px;
+    left: 0%;
+    color: #03a9f4;
+    font-size: 12px;
+}
+
+    
+</style>
+</head>
+
+<body>
+    <div class="main_div">
+    	<div class="box">
+		    <h1>login-form</h1>
+		    <form  method="" action="">
+			                <div class="inputBox">
+			                <input type="text" name="UserName" autocomplete="off" required>
+			                <label> UserName </label>
+			                </div>
+		                <div class="inputBox">
+		                <input type="password" name="" autocomplete="off" required>
+		                <label>password</label>
+		                </div>
+		        <input type="submit" name="" value="Login">
+		                
+		        </form>
+       </div>
+   </div>
+</body>
+</html>
